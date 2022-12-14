@@ -1,0 +1,1 @@
+SELECT customer.surname, customer.name, CONCAT(destination.country, ', ', destination.city) as "destination", hotel.name as hotel FROM customer JOIN destination ON destination.acronym = customer.top_destination JOIN hotel ON destination.hotel_id = hotel.id ORDER BY customer.surname, customer.name, destination, hotel.name;

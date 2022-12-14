@@ -1,0 +1,1 @@
+SELECT surname as "best customers", COUNT(id) as "number of travels" FROM customer JOIN booking on customer.surname = booking.customer_surname GROUP BY surname ORDER BY "number of travels" DESC, "best customers" DESC LIMIT 3;

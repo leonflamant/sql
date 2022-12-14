@@ -1,0 +1,1 @@
+SELECT DISTINCT name FROM creature_template JOIN creature ON creature.gid = creature_template.id JOIN quest on creature.id = quest.creature_start WHERE quest.creature_start = quest.creature_end ORDER BY name;

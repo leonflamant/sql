@@ -1,0 +1,1 @@
+SELECT id, CASE WHEN start_date > now() THEN 'Booked' WHEN end_date < now() THEN 'Done' WHEN start_date < now() AND end_date > now() THEN 'Ongoing' END as "trip status" FROM booking ORDER BY "trip status",id;

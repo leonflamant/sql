@@ -1,0 +1,1 @@
+SELECT title, name FROM quest FROM quest JOIN character_quests on character_quests.quest_id = quest_id JOIN character ON character_quests.character_id = character.id WHERE complete = 0 ORDER BY title;
